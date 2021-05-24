@@ -81,6 +81,7 @@ body {
 .header-container{
   display: flex;
   align-items: center;
+ 
 }
 
 .navigation{
@@ -92,7 +93,39 @@ body {
   display: flex;
   align-items: center;
   margin-left: auto;
+  
 }
+
+.mail-icon-envelope{
+  width: 16px;
+  height: 12px;
+  fill:#757575;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.mail-icon-vector{
+  width: 10px;
+  height: 16px;
+  fill:#757575;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.menu-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-icon-envelope:hover,
+.mail-icon-envelope:focus {
+ fill: #2196F3;
+}
+.mail-icon-vector:hover,
+.mail-icon-vector:focus {
+ fill: #2196F3;
+}
+
 
 .logo-text-header{
   margin-right: 93px;
@@ -166,7 +199,7 @@ letter-spacing: 0.03em;
 /* -------------end header----------- */
 
 /* ================Hero============== */
-.modal-bth {
+.hero-center-modal-bth {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -182,7 +215,7 @@ letter-spacing: 0.03em;
 }
 
 
-.hero-title {
+.hero-center-title {
   max-width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -193,21 +226,21 @@ letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
 
-.hero{
-   height: 600px;
-   left: 0px;
-   top: 80px;
-   text-align: center;
-   margin: 0 auto;
-   padding-top: 200px;
-   padding-bottom: 200px;
 
-
+.hero-center{
+  text-align: center;
+  background-color: #C4C4C4;
+  background-image: linear-gradient( 
+    rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../images/hero/bg.jpg);
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 /* ==============works============= */
-.works{
-  background-color: #2F303A;
-}
+
+
 
 
 /* ===========Features============= */
@@ -232,6 +265,50 @@ letter-spacing: 0.03em;
   align-items: center;
   justify-content: space-between;
 
+}
+.features-list-item.antenna-icon::before{
+  content: "";
+ display: block;
+  height: 120px;
+  width: 270px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  background-image: url(../images/feature/antenna1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.features-list-item.clock-icon::before{
+  content: "";
+ display: block;
+  height: 120px;
+  width: 270px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  background-image: url(../images/feature/clock\ -3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ .features-list-item.diagram-icon::before{
+  content: "";
+ display: block;
+  height: 120px;
+  width: 270px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  background-image: url(../images/feature/diagram\ -2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.features-list-item.astronaut-icon::before{
+  content: "";
+ display: block;
+  height: 120px;
+  width: 270px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  background-image: url(../images/feature/astronaut\ -4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features-list-item:not(:last-child){
@@ -282,6 +359,8 @@ letter-spacing: 0.03em;
 }
 .team-img-list-img-content{
   padding: 30px 32px;
+  padding-left: 44px;
+  padding-right: 44px;
   text-align: center;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -301,7 +380,13 @@ letter-spacing: 0.03em;
   color: var(--primary-secondary-color);
 }
 
-
+.social-list{
+  display: flex;
+}
+.social-list-icon{
+  width: 20px;
+  height: 20px;
+}
 /* ============End team============ */
 
 /* ========== footer=========== */
