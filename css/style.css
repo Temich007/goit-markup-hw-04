@@ -523,8 +523,6 @@ letter-spacing: 0.03em;
 
 .footer-social-title{
  display: flex;
-justify-content: center;
-align-items: center;
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
