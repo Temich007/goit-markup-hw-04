@@ -88,14 +88,17 @@ body {
   display: flex;
   align-items: center;
 }
-
+.mail-link,
+.tel-link {
+display: flex;
+  align-items: center;
+} 
 .menu{
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-left: auto;
-  
 }
-
 .mail-icon-envelope{
   width: 16px;
   height: 12px;
@@ -110,19 +113,23 @@ body {
   margin-right: 10px;
   cursor: pointer;
 }
-
-.menu-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mail-icon-envelope:hover,
-.mail-icon-envelope:focus {
+.mail-link:hover 
+.mail-link:focus {
  fill: #2196F3;
 }
-.mail-icon-vector:hover,
-.mail-icon-vector:focus {
+
+.mail-link:hover .mail-icon-envelope,
+.mail-link:focus .mail-icon-envelope {
+ fill: #2196F3;
+}
+
+.tel-link:hover 
+.tel-link:focus {
+ fill: #2196F3;
+}
+
+.tel-link:hover .mail-icon-vector,
+.tel-link:focus .mail-icon-vector {
  fill: #2196F3;
 }
 
@@ -172,7 +179,7 @@ letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575
+  color: var(--primary-secondary-color);
   
 }
 
@@ -182,13 +189,11 @@ letter-spacing: 0.03em;
 }
 
 .tel-link{
-  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
-  
+   color: var(--primary-secondary-color);
 }
 
 .tel-link:hover,
@@ -209,7 +214,7 @@ letter-spacing: 0.03em;
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: white;
+  color: var(--primary-white-color);
   padding: 10px 32px;
   margin-top: 30px;
 }
@@ -230,7 +235,6 @@ letter-spacing: 0.03em;
 .hero-center{
   max-width: 1600px;
   text-align: center;
-  background-color: #C4C4C4;
   background-image: linear-gradient( 
     rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)),
@@ -252,7 +256,7 @@ letter-spacing: 0.03em;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var( --primary-text-color);
 }
 .features-text {
   font-size: 14px;
@@ -347,7 +351,6 @@ letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #212121;
   margin-bottom: 10px;
 }
 .team-title-web{
@@ -419,13 +422,11 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;
 margin-bottom: 50px;
 }
 .clients-list{
   display: flex;
   justify-content: space-between;
-
 }
 .clients-list-link{
   display: flex;
@@ -483,7 +484,7 @@ letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: var(--primary-white-color);
 
 }
 .address-tel-link {
@@ -529,7 +530,7 @@ font-size: 14px;
 line-height: 1,14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--primary-white-color);
 margin-bottom: 20px;
 }
 
